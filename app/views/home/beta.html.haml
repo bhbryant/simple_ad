@@ -1,0 +1,10 @@
+.hero-unit
+  %h1 Ad Mouse is in private Beta
+  %br
+  %p If you're interested in being one of the first to try Ad Mouse, leave your email and we'll get in touch as soon as we're ready.
+  
+  = form_tag("/beta/join", method: "post", class: "from-inline") do
+     
+    .form-actions
+      = text_field_tag :email, "", class: "input-xlarge", placeholder: "Enter Email Address" 
+      = submit_tag "Join", class: "btn btn-primary btn-large span2"

@@ -1,0 +1,78 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+body 
+
+  header
+    background-color: #FFF
+    height: 70px
+
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-size: 14px
+  background-color: #fff
+  background-image: url(//s3.amazonaws.com/assets.audiobox.fm/assets/bg-app-14c61e5b0b902e527dbdfd90526b0de3.jpg)
+  font: 13px / 1.231 arial, helvetica, clean, sans-serif
+  font-weight: 400
+  color: #444751
+  line-height: 1.6em
+  margin: 0
+  
+  #wrapper
+    background-image: url(//s3.amazonaws.com/assets.audiobox.fm/assets/hr_bg-96527769cd7f1e8545d37b7fa8a76ea0.png)
+    background-position: center top
+    background-repeat: no-repeat
+    padding: 40px 0 20px
+    background-color: white
+    position: relative
+  footer 
+    background-image: url('//s3.amazonaws.com/assets.audiobox.fm/assets/hr_bg-96527769cd7f1e8545d37b7fa8a76ea0.png')
+    background-position: center -1px
+    background-repeat: no-repeat
+    border-top: 1px solid #aaa
+    text-align: center
+    margin-bottom: 60px
+    padding: 30px 0
+    
+    a 
+      display: inline-block
+      outline: none
+      
+      img 
+        -webkit-transition-property: box-shadow
+        -moz-transition-property: box-shadow
+        -o-transition-property: box-shadow
+        transition-property: box-shadow
+        -webkit-transition-duration: .2s
+        -moz-transition-duration: .2s
+        -o-transition-duration: .2s
+        transition-duration: .2s
+        -webkit-transition-timing-function: linear
+        -moz-transition-timing-function: linear
+        -o-transition-timing-function: linear
+        transition-timing-function: linear
+        vertical-align: middle
+        margin: 0 5px
+  
+
+      &:hover, &:active, &:focus
+        img 
+          -webkit-box-shadow: 0 0 5px 0 #6da5cb
+          -moz-box-shadow: 0 0 5px 0 #6da5cb
+          box-shadow: 0 0 5px 0 #6da5cb
+  
+  hr.smooth
+    background-image: url('//s3.amazonaws.com/assets.audiobox.fm/assets/hr_bg_span6-1043b955b5f9809309cce9a35b3d82f3.png')
+    background-repeat: no-repeat
+    background-position: center center 
+    border: none
+    height: 15px
+          
+
+    &.large 
+      background-image: url('//s3.amazonaws.com/assets.audiobox.fm/assets/hr_bg-96527769cd7f1e8545d37b7fa8a76ea0.png')
+  .span6 
+    hr.smooth.large 
+      background-image: url('//s3.amazonaws.com/assets.audiobox.fm/assets/hr_bg_span6-1043b955b5f9809309cce9a35b3d82f3.png')

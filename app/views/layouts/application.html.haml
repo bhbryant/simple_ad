@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %title SimpleAd
+    = stylesheet_link_tag    "application", :media => "all"
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %header
+      .container
+        .row
+          #logo.span3
+            %a{href: root_path} 
+              %h1 Ad Mouse
+
+          .span9
+            %nav
+              #login
+                = link_to "Sign In", "#", class: "btn btn-inverse"
+              = link_to "Pricing", "#pricing", class: "nav"
+              = link_to "Need help?", "#questions", class: "nav"
+              = link_to "How does it work?", "#how-does-it-work", class: "nav"
+              
+    #wrapper
+      .container
+        = yield
+
+    %footer
+      %p &copy; Ad Mouse 2012
